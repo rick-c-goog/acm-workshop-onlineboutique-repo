@@ -1,0 +1,18 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: network-policies
+upstream:
+  type: git
+  git:
+    repo: https://github.com/GoogleCloudPlatform/microservices-demo
+    directory: /docs/network-policies
+    ref: main
+  updateStrategy: resource-merge
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/GoogleCloudPlatform/microservices-demo
+    directory: /docs/network-policies
+    ref: main
+    commit: f0946c7de0a1a869bcd274fc4cf2a38ceb392fa2
