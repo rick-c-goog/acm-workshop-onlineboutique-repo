@@ -9,3 +9,5 @@ components:
 - base/for-virtualservice-host
 - sidecars/for-namespace
 - ../upstream/sidecars/for-memorystore
+- authorization-policies/for-namespace
+- authorization-policies/for-ingress-gateway

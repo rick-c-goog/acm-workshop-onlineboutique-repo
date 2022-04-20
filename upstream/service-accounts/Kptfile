@@ -1,0 +1,18 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: service-accounts
+upstream:
+  type: git
+  git:
+    repo: https://github.com/GoogleCloudPlatform/anthos-service-mesh-samples
+    directory: /docs/online-boutique-asm-manifests/service-accounts
+    ref: main
+  updateStrategy: resource-merge
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/GoogleCloudPlatform/anthos-service-mesh-samples
+    directory: /docs/online-boutique-asm-manifests/service-accounts
+    ref: main
+    commit: bfa8602d1e919ac9960b80505f21543f0f203ab5
