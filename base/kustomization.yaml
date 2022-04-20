@@ -12,3 +12,4 @@ patchesStrategicMerge:
   $patch: delete
 components:
 - network-policies
+- ../upstream/sidecars/all

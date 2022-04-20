@@ -7,3 +7,5 @@ namespace: onlineboutique
 components:
 - base/for-memorystore
 - base/for-virtualservice-host
+- sidecars/for-namespace
+- ../upstream/sidecars/for-memorystore
